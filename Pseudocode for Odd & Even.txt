@@ -1,0 +1,20 @@
+BEGIN
+numeric num
+print("enter the number")
+input(num)
+if(numm!=0)
+{
+if(num%2=0)
+{
+print(even)
+}
+else
+{
+print(odd)
+}
+}
+else
+{
+print("number is Zero")
+}
+END

@@ -1,0 +1,13 @@
+BEGIN
+numeric age
+print("enter age")
+input age
+if(age<18)
+{
+print{"not elligible for voting")
+}
+else
+{
+print("elligible for voting")
+}
+END

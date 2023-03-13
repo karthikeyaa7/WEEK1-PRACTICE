@@ -1,0 +1,33 @@
+BEGIN
+numeric basicsalary,hra,da,gross
+print("enter basic salary")
+input basicsalary
+if(basicsalary!=0)
+{
+if(basicsalary<=10000)
+{
+hra=(67*basicsalary)/100
+da=(78*basicsalary)/100
+gross=basicsalary+hra+da
+print("gross")
+}
+if(basicsalary<=20000)
+{
+hra=(69*basicsalary)/100
+da=(79*basicsalary)/100
+gross=basicsalary+hra+da
+print("gross")
+}
+if(basicsalary>20000)
+{
+hra=(75*basicsalary)/100
+da=(85*basicsalary)/100
+gross=basicsalary+hra+da
+print("gross")
+}
+}
+else
+{
+print("go get a job first")
+}
+END

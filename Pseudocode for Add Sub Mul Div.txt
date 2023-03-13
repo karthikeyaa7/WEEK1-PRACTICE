@@ -1,0 +1,13 @@
+BEGIN
+numeric num1,num2,add,sub,mul,div
+print num1 and num2
+input num1 and num2
+add=num1+num2
+sub=num1-num2
+mul=num1*num2
+div=num1/num2
+print("addition:",add)
+print("substraction:",sub)
+print("multiplication:",mul)
+print("division:",div)
+END

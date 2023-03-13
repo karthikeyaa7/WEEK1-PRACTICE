@@ -1,0 +1,9 @@
+BEGIN
+numeric basicsalary,hra,da,gross
+print("enter basic salary")
+input basicsalary
+hra=(56*basicsalary)/100
+da=(78*basicsalary)/100
+gross=basicsalary+hra+da
+print("gross")
+END
