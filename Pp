@@ -1,0 +1,43 @@
+Sure, here's a Java program that finds and prints the shortest palindrome in a series of strings:
+
+```java
+public class ShortestPalindromeFinder {
+
+    public static boolean isPalindrome(String str) {
+        int length = str.length();
+        for (int i = 0; i < length / 2; i++) {
+            if (str.charAt(i) != str.charAt(length - i - 1)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static String findShortestPalindrome(String[] strings) {
+        String shortestPalindrome = null;
+
+        for (String str : strings) {
+            if (isPalindrome(str)) {
+                if (shortestPalindrome == null || str.length() < shortestPalindrome.length()) {
+                    shortestPalindrome = str;
+                }
+            }
+        }
+
+        return shortestPalindrome;
+    }
+
+    public static void main(String[] args) {
+        String[] seriesOfStrings = {"abc", "deed", "xyyx", "z", "hello"};
+        String shortestPalindrome = findShortestPalindrome(seriesOfStrings);
+
+        if (shortestPalindrome != null) {
+            System.out.println("Shortest Palindrome: " + shortestPalindrome);
+        } else {
+            System.out.println("No palindromes found in the series of strings.");
+        }
+    }
+}
+```
+
+This program defines a function `isPalindrome` to check if a string is a palindrome and another function `findShortestPalindrome` to find the shortest palindrome in an array of strings. In the `main` method, we provide an example series of strings and print the shortest palindrome found in the series.
